@@ -1,0 +1,47 @@
+body{
+    font-family: 'Times New Roman';
+    margin: 0;
+}
+header{
+    text-align: center;
+}
+
+main {
+    padding: 104px 225px;
+}
+
+img{
+    width: 100px;
+    height: 147px;
+}
+h1{
+    color:#005677;
+    background-color: #C4C4C4;
+    font-size: 35px;
+}
+
+.subtitulo
+{
+    color:#005677;
+    background-color: #C4C4C4;
+    font-size: 20px;
+    padding: 7px;
+}
+
+footer{ 
+    display: flex;
+    align-items: center;
+    background-color: #005677;
+    color: white;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+footer img {
+    width:20px;
+    height:20px;
+    margin: 10px 10px;
+    
+}
