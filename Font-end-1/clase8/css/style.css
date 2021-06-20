@@ -1,0 +1,42 @@
+header{
+    text-align: center;
+}
+header img{
+    border-radius: 50%;
+}
+main{
+    padding: 50px 225px;
+}
+h1{
+    font-size: 35px;
+}
+h2{
+    font-size: 20px;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+    background-color: #C4C4C4;
+    color: #005677
+}
+span{ 
+    font-weight: bold;
+    font-style: italic;
+}
+
+footer{ 
+    display: flex;
+    align-items: center;
+    background-color: #005677;
+    color: white;
+    justify-content: center;
+}
+
+footer img {
+    width:20px;
+    height:20px;
+    margin: 10px 10px;
+    
+}
+
+
