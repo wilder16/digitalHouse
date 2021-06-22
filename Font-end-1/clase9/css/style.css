@@ -10,6 +10,74 @@ nav{
 }
 
 .icono-de-patita{
-    background-image: url(../img/icono-de-patita.svg)
+    list-style-image: url(../img/icono-de-patita.svg)
     
+}
+
+.banner{
+    text-align: center;
+    background-image: url(../img/fondo-banner.png);
+    height: 600px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size:cover
+
+}
+
+button {
+    background-color: #F0A83E;
+    width: 141px;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+.contenido-titulo-principal{
+    text-align: center;
+    margin: 15px;
+}
+h1{
+    font-size: 47px;
+    margin: 0px;
+}
+h6{
+    font-size: 15px;
+}
+.imagen-churrasco{
+    background-image: url(../img/churrasquito.png)
+}
+.descripcion-precio{
+    text-align: center;
+}
+.color-precio{
+    color: #F0A83E;
+}
+.seccion-suscripción{ 
+    background-color: #F0A83E;
+    color:white;
+    font-size: 20px;
+    display: flex;
+}
+footer img{ 
+    margin-right: 15px;
+}
+
+.contactanos{
+    background-color: #3C2313
+    ;
+}
+
+.contactanos span{
+    font-size: 20px;
+    color: white;
+}
+.contactanos li{
+    font-size: 10px;
+    color: white;
+}
+.derechos{
+    background-color: #222222;
+    font-size: 10px;
+    color: white;
+    text-align: center;
 }
