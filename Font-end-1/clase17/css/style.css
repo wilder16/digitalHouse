@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: Roboto;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+form { 
+    display: flex;
+    background-color: #00669F;
+}
+
+form section{
+    display: flex;
+    flex-direction: column
+}
+
+input:nth-of-type(3){
+    width: 343px;
+    height: 307px;
+}

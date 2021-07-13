@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: Roboto;
+    color: #3C2313;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.primera-linea{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222222;
+    color: white;
+    padding: 4px 52px 4px 90px;
+    font-size: 10px;
+}
+nav{
+    display: flex;
+    background-color: #F0A83E;
+    justify-content: space-between;
+    padding: 20px 20px 20px 40px;
+    font-size: 13px;    
+}
+
+.logo-principal{
+    width: 166.38px;
+}
+
+.lenguage-moneda{
+    list-style-type: none;
+    display: flex;
+}
+.lenguage-moneda li{
+    padding: 0px 0px 0px 12px;
+    font-size: 10px;
+}
+
+.opcion-navegacion{
+    list-style-image: url(../img/icono-de-patita.svg);
+    display: flex; 
+}     
+
+.opcion-navegacion li{
+    padding: 0px 36px 0px 0px;
+    
+}
+.opcion-navegacion a{
+    text-decoration: none;
+    color: white;
+}
+
+.banner{
+    text-align: center;
+    background-image: url(../img/fondo-banner.png);
+    height: 600px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size:cover
+}
+
+.btn-banner {
+    background-color: #F0A83E;
+    width: 141px;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+.contenido-titulo-principal{
+    text-align: center;
+    margin: 15px;
+}
+h1{
+    font-size: 47px;
+    margin: 0px;
+}
+h6{
+    font-size: 15px;
+}
+.imagen-churrasco{
+    background-image: url(../img/churrasquito.png)
+}
+.descripcion-precio{
+    text-align: center;
+}
+.color-precio{
+    color: #F0A83E;
+}
+.seccion-suscripcion{ 
+    background-color: #F0A83E;
+    color:white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 47px 10px  23px;
+
+}
+.seccion-suscripcion img{ 
+    margin-right: 15px;
+}
+
+.contactanos{
+    background-color: #3C2313;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px 0px;
+}
+
+.contactanos p{
+    font-size: 20px;
+    color: white;
+}
+.contactanos span{
+    font-size: 10px;
+    color: white;
+}
+.derechos{
+    background-color: #222222;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+}
+
+aside{ 
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 78px;
+
+}
+
+section span{
+    position: absolute;
+}
+
+.formulario-conctacanos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 75px;
+}
+
+form h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+input{
+    color:white;
+    font-size: 9px;
+    padding-left: 15px;
+    background-color: #3C2313;
+    border-radius: 15px;
+    height: 40px;
+    margin-bottom: 10px;
+    width: 340px;
+    border: 0;
+}
+::-webkit-input-placeholder { color: white; } 
+
+.contenedor-btn{
+    display: flex;
+    margin-top: 41px;
+    width: 18%;
+    justify-content: space-around;
+}
+.btn-resetar{
+    background-color: #8A8787;
+    color: white;
+    border-radius: 15px;
+    padding: 8px 25px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-enviar{
+    background-color: #F0A83E;
+    color: white;
+    border-radius: 15px;
+    padding: 8px 34px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.seccion-suscripcion div{
+    display: flex;
+    align-items: center;
+}
+
+.campo-suscripcion{
+    color:#A0A0A0;
+    font-size: 9px;
+    padding-left: 8px;
+    background-color: white;
+    border-radius: 15px;
+    height: 40px;
+    margin-bottom: 0px;
+    width: 340px; 
+}
+.campo-suscripcion::-webkit-input-placeholder { color:#A0A0A0; }
+
+.btn-suscribirme{
+    cursor: pointer;
+    border: 0;
+    color: white;
+    font-size: 9px;
+    border-radius: 15px;
+    background-color: #3C2313;
+    padding: 12px 10px;
+}
+
+.contenedor-iconos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedor-iconos img{
+    margin-bottom: 20px;
+}
+
+.texto-contactanos div{
+    margin-bottom: 51px;
+    margin-left: 25px;
+}
+
+.contenedor-opciones{
+    display: flex;
+}
+
