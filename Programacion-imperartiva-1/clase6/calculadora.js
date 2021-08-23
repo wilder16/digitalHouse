@@ -14,7 +14,7 @@ function multiplicar( num1, num2 ){
 
 function dividir( num1, num2 ){ 
     if( num2 === 0 ){
-        return console.log("No se puede divirdir por cero");
+        return "No se puede divirdir por cero";
     }else{
         return num1 / num2;
     } 
@@ -61,7 +61,7 @@ function calcularPorcentaje( numTotal, porcentaje ){
 console.log( calcularPorcentaje( 300, 15 ) );
 
 // 4
-const numero5 = 2;
+const numero5 = 50;
 const numero6 = 200;
 
 function generadorDePorcentaje( valor1, valor2 ){
