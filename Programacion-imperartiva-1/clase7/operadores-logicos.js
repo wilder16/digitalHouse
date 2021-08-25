@@ -1,7 +1,9 @@
+// ejercicio 1 
 let edad = 14; 
 let altura = 1.25; 
 console.log( ( edad > 12 ) && ( altura > 1.30));
 
+// ejercicio 2
 let luz = true;
 let movimientoRapido = false;
 
@@ -14,12 +16,14 @@ function usoDeFlash(luz, movimientoRapido){
 }
 console.log(usoDeFlash(true, false));
 
+// ejercicio 3
 let nota1 = 6;
 let nota2 = 5;
 let examenFinal = 5;
 
 console.log( (nota1 > 7 && nota2 > 7) || ( examenFinal >= 4) );
 
+// ejercicio 4
 let hizoTarea = true; 
 let practicasPiano = false; 
 let deMemoria = false;
@@ -31,5 +35,4 @@ function verTv(hizoTarea, practicasPiano, deMemoria){
         return "No vea TV";
     }
 }
-// console.log(verTv(hizoTarea, practicasPiano, deMemoria));
-verTv(hizoTarea, practicasPiano, deMemoria);
+console.log(verTv(hizoTarea, practicasPiano, deMemoria));
