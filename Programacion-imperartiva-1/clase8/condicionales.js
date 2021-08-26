@@ -100,3 +100,69 @@ function totalAPagar(vehiculo, litroConsumidos){
  }
 
  console.log("El total a pagar es por el Sandwich: " + totalPagarSandwich("pollo", "blanco", true, false, false, false, false, false));
+
+ // bonus 
+ 
+ // bonus 1 
+ function numeroSecreto( num ){
+     let random = (Math.random() * 10).toFixed(0);
+     if( num == random){ 
+         return "Felicitaciones le acertaste el numero secreto";
+     } else { 
+         return `Lo siento no le atinaste al numero secreto, tu ingresaste el ${num} y el numero secreto es ${random}` ;
+     }
+ }
+ console.log(numeroSecreto(5));
+
+ // bonus 2
+ function abrirParacaidas(velocidad, altura){
+     if (velocidad < 1000 && (altura >= 2000 && altura < 3000)){
+         return "Abra el paracaidas"
+     }else{
+        return "No abra el paracaidas"
+     }
+ }
+
+ console.log(abrirParacaidas(700, 2500));
+
+ // bonus 3
+function traductor( palabra ){
+
+    switch ( palabra ){
+        case "casa":
+            return "home";
+        case "perro":
+            return "dog";
+        case "pelota":
+            return "ball";
+        case "arbol":
+            return "tree";
+        case "genio":
+            return "genius";
+        default:
+            return "La palabra ingresada es incorrecta";
+    }
+}
+
+console.log(traductor("perro"));
+
+// bonus 4 
+function valoracionPelicula( valoracion ){
+
+    switch ( valoracion ){
+        case "Muy Mala":
+            return `Calificaste la película como ${valoracion} .Lo lamentamos mucho.`;
+        case "Mala":
+            return `Calificaste la película como ${valoracion} .Lo lamentamos mucho.`;
+        case "Mediore":
+            return `Calificaste la película como ${valoracion} .Lo lamentamos mucho.`;
+        case "Buena":
+            return `Calificaste la película como ${valoracion} .Nos da mucho gusto eso.`;
+        case "Muy Buena":
+            return `Calificaste la película como ${valoracion} .Nos da mucho gusto eso.`;
+        default:
+            return "Ingresaste un valor inválido";
+    }
+}
+
+console.log(valoracionPelicula("Muy Mala"));
