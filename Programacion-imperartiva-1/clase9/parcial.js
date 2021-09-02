@@ -32,4 +32,4 @@ function sumatoria(num1, num2){
         return "Ingrese un numero mayor a 10 para el segundo termino"; 
     }
 }
-console.log(sumatoria(11, 11));
+console.log(sumatoria(9, 1011));
