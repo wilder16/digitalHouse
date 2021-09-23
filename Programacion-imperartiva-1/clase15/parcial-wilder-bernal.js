@@ -189,14 +189,12 @@ const appProfesionales = {
     // C
     filtrarMejoresPuntajes: function () {
         const mejoresProfecionales = [];
-        let cont = 0;
         for (const profecional of this.profesionales) {
             if (profecional.puntaje > 7) {
                 mejoresProfecionales.push(profecional);
-                cont++;
             }
         }
-        return cont
+        return mejoresProfecionales.length
             ? mejoresProfecionales
             : "No hay profecionales que superen los 7 puntos";
     },
