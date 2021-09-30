@@ -26,7 +26,7 @@ let pelicula = {
     titulo: "Titanic",
     minutos: 560,
 };
-let peliculaJson = JSON.stringify(pelicula); // combierte un objeto literar a in JSON
+let peliculaJson = JSON.stringify(pelicula); // convierte un objeto literar a in JSON
 fs.writeFileSync(__dirname + "/prueba3.txt", peliculaJson);
 
 // leyendo un archivo JSON 

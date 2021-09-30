@@ -6,18 +6,17 @@ console.log(departamentos);
 const inmobiliaria = {
     // A
     departamentos,
-    listarDepartamentos: (arr) => {
-        arr.forEach(arr => {
+    listarDepartamentos: function () {
+        this.departamentos.forEach(departamentos => {
             console.table(
-                `id: ${arr.id}, precio $ ${arr.precioAlquiler}, ${
-                    arr.disponible ? " está Disponible" : "Alquilado"
-                }, ${arr.ambientes} ambientes`
+                `id: ${departamentos.id}, precio $ ${departamentos.precioAlquiler}, ${
+                    departamentos.disponible ? " está Disponible" : "Alquilado"
+                }, ${departamentos.ambientes} ambientes`
             );
         });
     },
     buscarPorId: (id) => {
-        const departamento = this.departamentos.find( () => id === this.departamentos.id);
-        return departamento
+        return this.departamentos.find( departamentos => id === departamentos.id);
     }
 
 };
