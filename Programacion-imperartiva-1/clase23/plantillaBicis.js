@@ -7,6 +7,7 @@ const oo = "*".repeat(25); // NO TOCAR
 /*******************************/
 const archivo = require("./jsonHelper");
 const bicicletas = archivo.leerJson("bicicletas");
+console.table(bicicletas);
 
 // A
 const carrera = {
@@ -57,9 +58,18 @@ const carrera = {
                     this.bicicletas.length
         );
     },
+    // J
+    aumentarPeso: function (id, peso) {
+        const ciclista = this.buscarPorId(id);
+        if (ciclista !== undefined) {
+            ciclista.peso += peso;
+            this.bicicletas.splice(id - 1, 1, ciclista);
+            archivo.escribirJson("bicicletas", this.bicicletas)
+        } else {
+            return console.log(`No se encontró al ciclista con id: ${id}`);
+        }
+    },
 };
-
-// J
 
 // K
 
@@ -69,31 +79,32 @@ const carrera = {
 /******************************/
 
 console.log(v, "\n" + oo + " .D. ");
-console.table(carrera.ciclistasHabilitados());
+// console.table(carrera.ciclistasHabilitados());
 console.log(o);
 
 console.log(v, oo + " .E.");
-carrera.listarBicicletas(bicicletas);
+// carrera.listarBicicletas(bicicletas);
 console.log(o);
 
 console.log(v, oo + " .F.");
-console.table(carrera.buscarPorId(2));
+// console.table(carrera.buscarPorId(2));
 console.log(o);
 
 console.log(v, oo + " .G.");
-console.table(carrera.filtrarPorPeso(8));
+// console.table(carrera.filtrarPorPeso(8));
 console.log(o);
 
 console.log(v, oo + " .H.");
-console.table(carrera.ordenarPorRodado());
+// console.table(carrera.ordenarPorRodado());
 console.log(o);
 
 console.log(v, oo + " .I.");
-carrera.largoPromedio();
+// carrera.largoPromedio();
 console.log(o);
 
 console.log(v, oo + " .J. ");
-// Ejecución aquí
+console.table(carrera.bicicletas);
+carrera.aumentarPeso(10, 1);
 console.log(o);
 
 console.log(v, oo + " .K. ");
