@@ -22,7 +22,7 @@ const carrera = {
     // E
     listarBicicletas: function (arr) {
         return arr.forEach((elemento) => {
-            console.table(
+            console.log(
                 `Ciclista: ${elemento.ciclista}, marca: ${
                     elemento.marca
                 },  rodado: ${elemento.rodado}, peso: ${
