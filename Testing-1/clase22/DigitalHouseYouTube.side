@@ -1,0 +1,100 @@
+{
+  "id": "096a12f4-c28d-4dc9-af97-7e0b4890631f",
+  "version": "2.0",
+  "name": "DigitalHouseYouTube",
+  "url": "https://www.youtube.com/",
+  "tests": [{
+    "id": "08a5c807-14b1-4cf5-85c4-0edbac34e808",
+    "name": "IngresandoAlCanalDigitalHouse",
+    "commands": [{
+      "id": "34514263-81d7-4cfa-9ca3-3a80c033f60c",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.youtube.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f6f7f7d-d63b-4c0a-b5ea-8a969546fe2e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1066",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c9e3e00-72fd-41dd-8d24-cd922d3ce648",
+      "comment": "",
+      "command": "click",
+      "target": "name=search_query",
+      "targets": [
+        ["name=search_query", "name"],
+        ["css=#search-input > #search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "276be221-5e58-4b3d-afeb-5072cf32e986",
+      "comment": "",
+      "command": "type",
+      "target": "name=search_query",
+      "targets": [
+        ["name=search_query", "name"],
+        ["css=#search-input > #search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Digital House"
+    }, {
+      "id": "e566a193-5a1a-439c-ada8-900f7494ef13",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=search_query",
+      "targets": [
+        ["name=search_query", "name"],
+        ["css=#search-input > #search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "8ac5cd03-fb8e-468b-9c54-cad4c8918c14",
+      "comment": "",
+      "command": "click",
+      "target": "css=#channel-title > #container #text",
+      "targets": [
+        ["css=#channel-title > #container #text", "css:finder"],
+        ["xpath=(//yt-formatted-string[@id='text'])[52]", "xpath:attributes"],
+        ["xpath=(//div[@id='text-container']/yt-formatted-string)[28]", "xpath:idRelative"],
+        ["xpath=//a/div/ytd-channel-name/div/div/yt-formatted-string", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6bec29a-52c0-47ac-8af2-98f1d5bc7ad1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=subscriber-count",
+      "targets": [
+        ["id=subscriber-count", "id"],
+        ["css=#subscriber-count", "css:finder"],
+        ["xpath=//yt-formatted-string[@id='subscriber-count']", "xpath:attributes"],
+        ["xpath=//div[@id='meta']/yt-formatted-string", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/yt-formatted-string", "xpath:position"],
+        ["xpath=//yt-formatted-string[contains(.,'4060 suscriptores')]", "xpath:innerText"]
+      ],
+      "value": "5060 suscriptores"
+    }]
+  }],
+  "suites": [{
+    "id": "c0b8cc8a-c47c-4345-905e-f887950deaf6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.youtube.com/"],
+  "plugins": []
+}
