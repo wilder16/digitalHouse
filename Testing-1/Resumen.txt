@@ -1,0 +1,196 @@
+Clase 1:
+Testing = Calidad. Calidad = Satisfacción del cliente ante un producto o servicio
+Testing = Confianza. 
+El testing nos ayuda a: 
+Encontrar defectos y remediarlos
+Asegura el buen funcionamiento del producto 
+Lograr un mayor grado de calidad.
+
+7 Principios del testing: 
+1. La prueba muestra la presencia de defectos, no su ausencia.
+2. La prueba exhaustiva es imposible. 
+3. La prueba temprana ahorra tiempo y dinero.
+4. Los defectos se agrupan. 
+5. Cuidado con la paradoja del pesticida.
+6. La prueba se realiza de manera diferente según el contexto. 
+7. La ausencia de errores es una falacia.
+
+------------------------------------------------------------------------------------------------------------------------------------
+Clase 2: 
+Error: Se produce por la equivocación de una persona, esto causa un defecto y se produce un fallo cuando el software se ejecuta
+Defecto: 
+Falla: 
+
+
+
+
+
+
+
+
+Clase 4: 
+Qué es un caso de prueba: Es un documento escrito que proporciana informacion escrita sobre qué y cómo probar. 
+
+Testing positivo: Son los casos de prueba que validan el flujo normal de un sistema, es decir flujo que están relacionado a los requisitos funcionales. 
+
+Testing negativos: Son los casos de pueba que validan flujos no contemplados dentro de los requisitos de un sistema. 
+
+Happay path: Es el unico camino con el que se prueba una aplicación recorriendo siguiendo el flujo que realizaria un usuario final cuando usa la aplicación 
+de manera regular, está incluida en la categoria de prueba positiva.
+
+Casos de uso: 
+
+Casos de prueba: Es un documento escrito que proporciona informacion escrita sobre qué y cómo probar.
+
+Pruebas de caja negra:
+
+-------------------------------------------------------------------------------------------------------------------------------------
+Clase 8: 
+Sincronica: 
+Ejecución de Caso de prueba:
+
+Pruebas de Humo:Evalua la estabilidad de las compilaciones de software iniciales o desarrolladas recientemente. 
+Corresponde a aquellos conjuntos de pruebas que cubran la funcionalidad principal de un componente o sistema.
+Su objetivo es asegurar que las funciones cruciales de un pragrama funcionan, pero sin preocuparse por los detalles finos.
+
+Pruebas de regresión: Corresponde a aquellos conjuntos de pruebas que nos permiten asegurar que cualquier mejora, actualización o cambio de código
+no han dañado los componentes las interfaces o los sistemas existentes.
+Dentro de un proyecto de automatización, lo ideal es comenzar con las pruebas de regresión, ya que estas se ejecutan muchas veces y generalmente evoculionan lentamente
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Clase 10: 
+Prueba Estatica y Dinamica:
+Prueba estatica: se base en la evaluación manual de los productos de trabajo (es decir, revisiones) o en la evaluación basada en herramientas del código u otros productos
+de trabajo (es decir análisis estatico). 
+Este tipo de pruebas no requieren la ejecución del software que se está probando. => Revisión: de forma manual y Analisis: con una herramienta. 
+En las estaticas se detectan => Defectos.
+
+Pruebas Dinamicas: Se requieren la ejecución del software componente o sistema, se complementa con las pruebas estaticas debido a que encuentra diferentes tipos de defectos. 
+=> En estas se detectan fallas. 
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+Clase 11: 
+
+Tipos de pruebas según ambiente: 
+
+DEV: Se hacen pruebas unitarias o de componente, pruebas de integración
+QA: Se hacen pruebas funcionales, pruebas de casos de usos, pruebas de exactitud, prebas de humo, pruebas de sistema, pruebas de regresión, pruebas de confirmacion
+UAT: Se hacen pruebas de aceptación, pruebas exploratorias, pruebas de usabilidad, prueba de accesibilidad
+STG: ambiente preproductivo => (No funcionales en general). Pruebas de mantenimeinto, pruebas se seguridad, pruebas de rendimiento, pruebas de carga, estres y escalabilidad, pruebas de infraestructura
+pruebas de compatibilidad, pruebas de interoperabilidad, pruebas de migracion de datos
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Clase 13: Sincronica
+Debug o depuración: Proceso de encontrar y analizar y remover las causas de fallos en el software.
+Se realizar la ejecución paso a paso de cada instrucción del programa para analizar las variables y sus valores
+
+Breakpoints: Es un punto de interrupción en nuetro código para detener la ejecución del programa en lineas especificas
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Clase 16: 
+npm install -- save-dev jest => Dependencia que vive en cada proyecto
+en el package.json => cambiar test: "jest"
+se debe crear la carpeta __test__
+crear un archivo con el nombre del archivo que se va a probar EJJ: util.test.js en donde se debe requerir el archivo que se va a probar
+test('nombreTest', () => {
+expect(resultado obtenido).toBe(resultado esperado)
+});
+
+para ejecutar el test se debe utilizar npm rum test
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Clase 17:
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Clase 18: 
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Clase 19:
+Testing de Back-end
+Introducción a API: 
+API: Aplication Programming Interface => Basicamente es una URL que nos devuelve una informacion para que otro sistema lo consuma, estas son desarrolladas 
+para que un sistema pueda comunicarse, las API tiene su propia documentacion, existen publicas, semipublicas y privadas
+Los Endpoint: Es un punto de conexión donde necesitamos apuntar para obtener la informacion que queremos, basicamente son las URL que se deben utilizar para obtener
+la informacion de un servidor a través de una API
+
+Testing de API: Basicamente es entender como funciona la API se debe armar una buena convinación de parametros de entrada ejecutar las pruebas contra la API
+verificar el resultado y reportar cualquier desviación en la funcionalidad espera. 
+Estas pruebas consiste en hacer peticiones HTTP (GET, POST, PUT, DELETE)
+
+HTTP y sus metodos: 
+Hypertext Transfer Protocol: Protocolo que gestiona las transacciones entre dos entidades, el cliente y el servidor. 
+Metodo get: Se utiliza para solicitar cosas al servidor, es decir solo deben recuperar datos no modificar información que se encuentra en el servidor
+Metodo post: Se utiliza para enviar información al servidor, en general la peticiones hechas con este metodo servirán para hacer registros. 
+Metodo put: Se utiliza para reemplazar información actual de un registro ya presentes en el servidor
+Metodo delete: Se utiliza para boorar un recurso ya presente en el servidor
+
+Postman:
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Clase 20:
+
+swagger => nos permite documentar las API
+Postman: 
+1. Se debe crear una colecctions 
+2. Se debe agregar Request 
+3. 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Clase 22: 
+Pruebas Automatizadas: 
+Proceso de ejecutar varias pruebas unas y otra vez sin intervención humana utilizando una herramienta de automatización
+
+Tipos de pruebas automatizadas: 
+Pruebas unitarias 
+Pruebas de API
+Pruebas de interfaz grafica
+
+Otras pruebas que también se pueden automatizar son: 
+Rendimiento
+Regresión 
+Integración
+Seguridad 
+Compatibilidad en diferentes navagadores
+Casos repetitivos
+
+Patrones de diseño: Son soluciones probadas y documentadas a problemas comunes de desarrollo de software
+
+Screenplay => Tiene un enfoque de desarrollo encaminado por comportamientos BDD, es una estrategia de desarrollo que se enfoca en prevener defectos en lugar de encontrarlos. 
+Presenta un arto desacoplamiento de la interfaz de usuario 
+Propone trabajar en terminos de tareas y no de interfaz de usuario 
+cumple con los principos solidos 
+
+Page Object => 
+Es un patrón de diseño que representa los componentes web o página web en una clase.
+Se utiliza en las pruebas automatizadas para evitar código duplicado y mejorar el mantenimiento de las mismas.
+No cumple con los principios SOLID.
+
+Principios SOLID: 
+Son buenas prácticas de facilitan la creación de software de calidad, son 5 principios de la POO.
+Single responsibility
+Open-closed
+Liskov substitution
+Interface segregation
+Dependency inversion
+
+Selenium => Es un framework destinado a la automatización web.
+Es una herramienta de código abierto, Proporciona la posibilidad de grabar y/o reproducir, editar y depurar casos de pruebas que permitirán ejecutarlas repetidamente cuando sea necesario. 
+Ofrece tres productos: 
+
+Selenium Grid => Permite diseñar pruebas automatizadas para aplicaciones web en diversas plataformas. Asimismo, posibilita la ejecución de
+pruebas en diversos servidores en paralelo.
+
+Selenium WebDriver => Es útil para poder simular la manera en que los usuarios reales interactúan con alguna aplicación web.
+
+Selenium IDE => Integrated Development Environment es una herramienta de automatización que nos permite grabar, editar y depurar pruebas, sin la necesidad del uso de un lenguaje de programación.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Clase 23:
+Selenium WebDriver: 
+Es uno de los frameworks más utilizados para generar pruebas automatizadas.
+Se utiliza para la automatización de navegadores web

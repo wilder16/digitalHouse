@@ -1,0 +1,22 @@
+Clase 19:
+Patrones de Diseño: 
+Patron Singleton
+1. Se tiene que crear un atributo de la clase del mismo tipo de la clase con el nombre instance (por convencion)
+2. Se tiene que crear un constructor privado, para que no se puede instanciar desde otra clase
+3. Se tiene que crear un metodo static getInstance() que retorne el mismo tipo de la clase
+
+Patron Factory: 
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+Clase 20: 
+
+Patron State:
+
+
+------------------------------------------------------------------------------------------------------------------------------------------
+Clase 22:
+Patron Composite: 
+Se tiene que uitlizar un interfaz o una clase abstracta llamada Comprable
