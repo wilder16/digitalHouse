@@ -11,7 +11,6 @@ function juego (opcionUsuario, opcionMaquina){
             return mensaje = opcionMaquina == 1 ? "Empató" : opcionMaquina == 2 ? "Pierde" : "Gana";
         case 2:
             return mensaje = opcionMaquina == 2 ? "Empató" : opcionMaquina == 1 ? "Gana" : "Pierde";
-
         case 3:
             return mensaje = opcionMaquina == 3 ? "Empató" : opcionMaquina == 1 ? "Pierde" : "Gana";
     }
