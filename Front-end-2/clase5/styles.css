@@ -75,3 +75,10 @@ las modificaciones a los textos de los items y los titulos de ellos
 .dark p {
   color: rgb(230, 230, 230);
 }
+
+.titulo-destacado{
+  color: crimson;
+  font-size: 50px;
+  border:solid 1px green; 
+  border-radius: 10px;
+}

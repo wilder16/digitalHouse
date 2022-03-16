@@ -28,3 +28,17 @@ escribirHTML('Hola', 'Esto es un ejemplo de template string en html.');
 escribirHTML('Es dinámico', 'Podemos insertar elementos HTML mediante <b>JavaScript</b>');
 escribirHTML('Facilita la programación', 'Evita escribir mucho código y reutilizar el que si escribamos.');
 escribirHTML('En este ejemplo', 'Hemos utilizado una única función para poder escribir 4 veces en HTML, ¿te imaginás lo que sería esto sin esta función?');
+
+
+// classList.add('nombreClase') => Agrega una clase a un elemento, la clase ya debe existir en el css
+// classList.remove('nombreClase') => Elimina una clase a un elemento, la clase ya debe existir en el css
+// classList.toggle('nombreClase') => Agrega o elimina una clase segun sea el caso
+
+let titulo = document.querySelector('h1');
+titulo.classList.add('titulo-destacado');
+
+let quitarEstilos = confirm('Quieres eliminar los estilos del titulo')
+
+if(quitarEstilos){
+    titulo.classList.remove('titulo-destacado');
+}
