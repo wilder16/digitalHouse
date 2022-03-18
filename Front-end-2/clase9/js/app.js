@@ -60,8 +60,10 @@ window.addEventListener('load', function () {
     // - que se puede seguir multiplicando(duplicando la velocidad)
     // - impacata en el numero del boton
     function acelerar() {
-        clearInterval(cronometro);
-        tiempo/=2 
-        play()
+        if(contador != 0){
+            clearInterval(cronometro);
+            tiempo/=2;
+            play();
+        }
     }
 });
