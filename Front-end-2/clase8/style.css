@@ -1,0 +1,19 @@
+header{ 
+    background-color: brown;
+    font-size: 15px;
+}
+main {
+    background-color: cornflowerblue;
+    font-size: 45px;
+}
+
+footer{ 
+    background-color: black;
+    font-size: 10px;
+    color: white;
+    
+}
+
+.nacional{ 
+    background-image: url(img/colombia.png);
+}
