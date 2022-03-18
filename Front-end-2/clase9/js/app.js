@@ -1,28 +1,25 @@
-window.addEventListener('load', function () {
-    
-
+window.addEventListener("load", function () {
     /* -------------------------------- variables ------------------------------- */
     let contador = 0;
     let cronometro;
     let tiempo = 1000;
-    const valor = document.querySelector('#valor');
-    const btnIniciar = document.querySelector('#iniciar');
-    const btnStop = document.querySelector('#stop');
-    const btnPausa = document.querySelector('#pausa');
-    const times = document.querySelector('#times');
-    const btnAcelerar = document.querySelector('#acelerar');
+    const valor = document.querySelector("#valor");
+    const btnIniciar = document.querySelector("#iniciar");
+    const btnStop = document.querySelector("#stop");
+    const btnPausa = document.querySelector("#pausa");
+    const times = document.querySelector("#times");
+    const btnAcelerar = document.querySelector("#acelerar");
 
     /* -------------------------------- LISTENERS ------------------------------- */
-    btnIniciar.addEventListener('click', function (e) {
+    btnIniciar.addEventListener("click", function (e) {
         console.log("click");
-        play();
+        if(contador === 0){
+            play();
+        }
     });
-    btnStop.addEventListener('click', reiniciar);
-    btnPausa.addEventListener('click', pausar);
-    btnAcelerar.addEventListener('click', acelerar);
-
-
-
+    btnStop.addEventListener("click", reiniciar);
+    btnPausa.addEventListener("click", pausar);
+    btnAcelerar.addEventListener("click", acelerar);
 
     /* -------------------------------------------------------------------------- */
     /*                                  FUNCIONES                                 */
@@ -34,7 +31,7 @@ window.addEventListener('load', function () {
             console.log(contador);
             renderizar();
         }, tiempo);
-    };
+    }
 
     // difinimos la responsabilidad de la funcion renderizar
     function renderizar() {
@@ -49,7 +46,7 @@ window.addEventListener('load', function () {
     // definimos la funcionalidad del boton stop
     function reiniciar() {
         clearInterval(cronometro);
-        times.innerHTML += `<small>Tiempo: ${contador}</small>`
+        times.innerHTML += `<small>Tiempo: ${contador}</small>`;
         contador = 0;
         tiempo = 1000;
         renderizar();
@@ -60,9 +57,9 @@ window.addEventListener('load', function () {
     // - que se puede seguir multiplicando(duplicando la velocidad)
     // - impacata en el numero del boton
     function acelerar() {
-        if(contador != 0){
+        if (contador != 0) {
             clearInterval(cronometro);
-            tiempo/=2;
+            tiempo /= 2;
             play();
         }
     }
