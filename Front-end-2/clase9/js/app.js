@@ -9,12 +9,14 @@ window.addEventListener("load", function () {
     const btnPausa = document.querySelector("#pausa");
     const times = document.querySelector("#times");
     const btnAcelerar = document.querySelector("#acelerar");
+    let bandera = 0;
 
     /* -------------------------------- LISTENERS ------------------------------- */
     btnIniciar.addEventListener("click", function (e) {
         console.log("click");
         if(contador === 0){
             play();
+            bandera = 0;
         }
     });
     btnStop.addEventListener("click", reiniciar);
@@ -40,7 +42,14 @@ window.addEventListener("load", function () {
 
     // definimos la funcion de pausar
     function pausar() {
-        clearInterval(cronometro);
+        if( bandera === 0 ){
+            clearInterval(cronometro);
+            bandera = 1;
+        }else{
+            play()
+            bandera = 0;
+        }
+        
     }
 
     // definimos la funcionalidad del boton stop
