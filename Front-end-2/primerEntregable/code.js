@@ -26,7 +26,6 @@ const listado = [
 
 const profileBtn = document.querySelector("#completar-perfil");
 const materiasBtn = document.querySelector("#obtener-materias");
-const verMasBtn = document.querySelector("#ver-mas");
 const cambiarTema = document.querySelector("#cambiar-tema");
 
 profileBtn.addEventListener("click", renderizarDatosUsuario);
@@ -44,7 +43,6 @@ function obtenerDatosDelUsuario() {
     datosPersona.interesPorJs = confirm("Te interesa JavaScript?")
         ? "Si"
         : "No";
-    console.table(datosPersona);
 }
 
 function renderizarDatosUsuario() {
@@ -89,9 +87,6 @@ function alternarColorTema() {
 window.addEventListener("keydown", function (e) {
     if (e.key == "f") {
         const p = document.querySelector(".oculto");
-        p.classList.remove("oculto");
-        p.removeEventListener("keydown", function (e) {
-            e.key == "f";
-        });
+        p.style.visibility = "visible";
     }
 });
