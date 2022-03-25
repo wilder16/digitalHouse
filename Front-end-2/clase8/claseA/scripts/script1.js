@@ -67,8 +67,8 @@ window.addEventListener('keypress', function(e){
 })
 
 window.addEventListener('keydown', function(e){
-    if(e.key == 'w'){
-        alert('Precionaste la tecla w');
+    if(e.key == 'f'){
+        alert('Precionaste la tecla f');
     }
 })
 

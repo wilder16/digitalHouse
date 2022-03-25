@@ -54,17 +54,44 @@ function renderizarDatosUsuario() {
     const span = document.querySelectorAll("span");
     let i = 0;
     Object.entries(datosPersona).forEach(([_, value]) => {
-      span[i++].innerText = value;
+        span[i++].innerText = value;
     });
-
 }
 
 function recorrerListadoYRenderizarTarjetas() {
     /* ------------------ PUNTO 3: Escribe tu codigo desde aqui ------------------ */
+    const contenedor = document.getElementById("fila");
+    const templateLiteral = (element) => {
+        return `
+    <div class="caja">
+        <img src="${element.imgUrl}" alt="${element.lenguajes}">
+        <p class="lenguajes">${element.lenguajes}</p>
+        <p class="bimestre">${element.bimestre}</p>
+    </div>
+    `;
+    };
+    listado.forEach(
+        (element) => (contenedor.innerHTML += templateLiteral(element))
+    );
+    materiasBtn.removeEventListener(
+        "click",
+        recorrerListadoYRenderizarTarjetas
+    );
 }
 
 function alternarColorTema() {
     /* --------------------- PUNTO 4: Escribe tu codigo aqui --------------------- */
+    const sitio = document.getElementById("sitio");
+    sitio.classList.toggle("dark");
 }
 
 /* --------------------- PUNTO 5: Escribe tu codigo aqui --------------------- */
+window.addEventListener("keydown", function (e) {
+    if (e.key == "f") {
+        const p = document.querySelector(".oculto");
+        p.classList.remove("oculto");
+        p.removeEventListener("keydown", function (e) {
+            e.key == "f";
+        });
+    }
+});
