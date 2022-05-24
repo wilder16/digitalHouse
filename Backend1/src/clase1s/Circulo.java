@@ -11,7 +11,7 @@ public class Circulo extends FiguraGeometrica {
     @Override
     public Double area(){
         if(radio == 0){
-            System.out.println("El valor del radio o lado debe ser mayor que cero");
+            System.out.println(MENSAJE);
             return null;
         }else{
             return area = Math.PI * radio * radio;
