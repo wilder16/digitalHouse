@@ -12,10 +12,6 @@ public class Correo {
         this.asunto = asunto;
     }
 
-    public Correo() {
-
-    }
-
     public String getOrigen() {
         return origen;
     }
